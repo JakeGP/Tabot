@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="popup.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h3>TABUD?</h3>
+    </div>
+
+    <label for="toggle">
+      <input id="toggle" type="checkbox" class="on"/>
+      <div class="slider"></div>
+    </label>
+
+    <div class="title">
+      <p>Blacklist a webpage</p>
+    </div>
+
+    <div class="row">
+      <input type="text" id="blacklistEntry" placeholder="e.g. 'www.facebook.com'"/>
+      <div id="add-button">
+        <p>+</p>
+      </div>
+    </div>
+
+    <div class="tooltip">
+      <p>You can enter a complete url (e.g. 'www.google.co.uk') or a partial string (e.g. 'google') to filter out specific webpages or all pages within a sites domain</p>
+    </div>
+
+    <div class="title">
+      <p>Current Blacklist</p>
+    </div>
+
+    <ul id="blacklistList">
+      <li class="blacklistItem">
+        <p class="blacklistTitle">google</p>
+        <div class="blacklistRemove">
+          <p>-</p>
+        </div>
+      </li>
+    </ul>
+    <div style="display: none;">
+      <div id="suggestiontitle" class="title">
+        <p class="pointer">Suggest a word</p>
+      </div>
+      <div id="suggestionbox">
+        <div class="row row-suggestion">
+          <p>From</p>
+          <input type="text" id="suggestFrom" placeholder="e.g. hello"/>
+        </div>
+        <div class="row row-suggestion">
+          <p>To</p>
+          <input type="text" id="suggestTo" placeholder="e.g. ey up"/>
+        </div>
+        <div class="row">
+          <p id="suggestion-send">Send suggestion</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="popup.js"></script>
